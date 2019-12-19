@@ -1,10 +1,4 @@
-SET ANSI_NULLS ON
-SET QUOTED_IDENTIFIER ON
--- =============================================
--- Author:	Geethika Joy
--- Create date: <Create Date,,>
--- Description:	<Description,,>
--- =============================================
+
 CREATE PROCEDURE [dbo].[AirBankPaymentDetail]
 	-- Add the parameters for the stored procedure here
 	@ReceiptID BIGINT
@@ -24,6 +18,6 @@ BEGIN
 	INNER JOIN AirExpInvoice ON AirBnkPaymntDtl.VoucherID = AirExpInvoice.ExpInvoiceID
 	WHERE (AirBnkPaymnt.Active = 1)
 		AND (AirBnkPaymntDtl.Active = 1)
-		AND AirBnkPaymnt.ReceiptID = @ReceiptID
+		AND AirBnkPaymnt.ReceiptID = @ReceiptID -- from try
 END
 
