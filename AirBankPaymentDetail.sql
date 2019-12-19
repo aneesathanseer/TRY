@@ -18,6 +18,6 @@ BEGIN
 	INNER JOIN AirExpInvoice ON AirBnkPaymntDtl.VoucherID = AirExpInvoice.ExpInvoiceID
 	WHERE (AirBnkPaymnt.Active = 1)
 		AND (AirBnkPaymntDtl.Active = 1)
-		AND AirBnkPaymnt.ReceiptID = @ReceiptID -- from try jinil dfdgfdf dsfdf
+		AND AirBnkPaymnt.ReceiptID = @ReceiptID -- from try jinil dfdgfdf dsfdf cfghgfhgfh test
 END
 
